@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.6rem
+}
+
+/* ========================================navigation bar style ============================================= */
+nav>* {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav {
+  height: 72px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 10px #EDEDED;
+}
+
+#menu { display: none; }
+
+#searchBar {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  background-color: #eefeee;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 10;
+  outline: none;
+}
+#searchBar>input {
+  float: right;
+  height: 100%;
+  width: 80%;
+  background-color: transparent;
+  border:0;
+}
+#searchBar>button{
+  float: left;
+  width: 20%;
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+#searchBar>input:focus {
+  outline: none;
+}
+#logo {
+  flex-grow: 2;
+  min-width: 90px;
+  max-width: 90px;
+}
+#cart:hover {
+  color: #5624d0;
+  font-weight: bold;
+}
+
+.btn{
+  font-weight: bold;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+  margin: 0 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftBtns{
+  display: flex;
+  align-items: stretch;
+} 
+
+#logIn, #signUp {
+  min-width: 80px;
+}
+
+#logIn:hover, #lang:hover{
+  background-color: #EEE;
+}
+
+#signUp {
+  background-color: black;
+  color: white;
+}
+#signUp:hover {
+  background-color: #333;
+}
+
+#lang {
+  font-weight: normal;
+  font-size: 2rem;
+  max-width: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0 5px;
+}
+
+
+/*=========================================================================================================== */
+
+header {
+  padding: 0 5px;
+}
+
+.banner{
+  width: 100%;
+}
+
+.banner img{
+  width: 100%;
+  z-index: -1;
+}
+
+.banner div {
+  width: 460px;
+  background-color: white;
+  position: absolute;
+  top: 20vh;
+  left: 5vw;
+  padding: 2rem; 
+  box-shadow: 0 5px 5px #AAA;
+  font-size: 1.6rem;
+  color: #222;
+}
+.banner>div>h1 {
+  font-family: Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  padding-bottom: 1.1rem;
+}
+
+/* .banner>div>p { */
+/*   font-size: 1.6rem; */
+/* } */
+
+#leftArrow, #rightArrow {
+  position: absolute;
+  top: 35%;
+  background-color: #222;
+  color: white;
+  border-radius: 100%;
+  width: 4.0rem;
+  height: 4.0rem;
+  font-size: 2.7rem;
+  font-weight: bold;
+  padding: 8px 6px;
+  z-index: 1;
+}
+#leftArrow:hover, #rightArrow:hover {
+  cursor: pointer;
+  background-color: #333;
+  
+}
+#leftArrow {
+  left: 15px;
+}
+
+#rightArrow {
+  right: 15px;
+}
+
+/*===============================Courses =================================*/
+
+
+.courses {
+  padding: 3.2rem;
+}
+
+.courses > h1 {
+  font-family: Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  font-size: 3.3rem;
+  color: #222;
+}
+
+.courses h1+p{
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: #222;
+}
+
+.courses>ul {
+  list-style-type: none;
+  display: block;
+}
+.courses>ul li>a {
+  float: left;
+  padding: 0 1.2rem 1.4rem 0;
+  margin: 0 .5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #555;
+  text-decoration: none;
+}
+
+/*stop elements from floating after the list*/
+.courses>ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.courses>div {
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  padding: 3rem;
+}
+
+.courses>div>p {
+  padding: 1rem 0;
+  color: #333;
+  width: 70%; 
+}
+
+.explore {
+  color: black;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem 0 4rem;
+  font-size: 1.5rem;
+}
+
+.explore:hover {
+  background-color: #EEE;
+}
+
+.cards {
+  list-style-type: none;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards>li {
+  display: block;
+}
+
+
+.card > a {
+  display:block;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.imgWrapper {
+  width: 250px;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.imgWrapper>img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999;
+}
+
+.author {
+  padding: .8rem 0 0;
+  color: #444;
+}
+.rating>span {
+  color: #b4690e;
+  font-size: 1.6rem;
+  margin: .8rem 0;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.rating {
+  word-spacing: -10px;
+}
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width: 900px){
+  .hideOnSmallScreen{
+    display: none;
+  }
+
+  .banner>div {
+    width: 300px;
+    font-size: 1.3rem;
+    top: 12%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  /* ========================nav================================================================== */
+  nav>*, nav div, nav a, .leftBtns{
+    display: none;
+  }
+  #logo {
+    display: inline-block;
+    position: absolute;
+    left: 49%;
+  }
+  #menu {
+    display: inline-block;
+    position: absolute;
+    font-size: 4rem;
+  }
+  #menu:hover {
+    cursor: pointer;
+  }
+
+  /*====================================header ===========================================*/
+  .banner>div {
+    position: static;
+    width: 100%;
+    box-shadow: 0 0 0;
+  }
+  .banner>a{
+    direction: rtl;
+    display: block;
+  }
+  .banner img {
+    width: 195%;
+  }
+  #rightArrow, #leftArrow {
+    display: none;
+  }
+  header {
+    padding: 0;
+  }
+
+
+  /*=====================================courses==================*/
+
+  .courses {
+    padding: 2rem;
+  }
+
+  .courses>div {
+    padding: 1.5rem;
+  }
+}
